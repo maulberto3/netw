@@ -5,6 +5,7 @@ import socketio
 
 socket_io = socketio.AsyncServer()
 app = web.Application()
+
 socket_io.attach(app)
 
 

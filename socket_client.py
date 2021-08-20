@@ -17,4 +17,5 @@ def disconnect():
 
 sio.connect('http://localhost:8080')
 sio.emit('message', {'data': 'my_data'})
-sio.wait()
+# sio.wait()
+sio.disconnect()

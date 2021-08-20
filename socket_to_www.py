@@ -14,8 +14,8 @@ if __name__ == '__main__':
         print("Reason: %s" % str(err))
         sys.exit()
 
-    target_host = 'www.python.org'
-    target_port = 80
+    target_host = 'www.python.org'  # '127.0.0.1'
+    target_port = 80  # 8080
 
     try:
         # sock.connect((target_host, int(target_port)))
