@@ -6,7 +6,7 @@ def main():
     from time import sleep
     from datetime import datetime as dti
 
-    # SIMPLE FTP standard
+    # SIMPLE FTP standard scanner
 
     import socket as s
 
@@ -28,8 +28,7 @@ def main():
                 # ftp_conn.login()  # user anonymous, passwd anonymous@
                 # ftp_conn.dir()
             with open('ftp_ok_anon_hosts.txt', 'a') as file:
-                file.write(adr + '\n' + ' ' +
-                           dti.now().strftime('%b-%d-%Y %T'))
+                file.write(adr + '\n' + ' ' + ' ' + dti.now().strftime('%b-%d-%Y %T'))
         except BaseException as e:
             print(e)
 
